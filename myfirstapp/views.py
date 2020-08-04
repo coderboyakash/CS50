@@ -7,3 +7,6 @@ def index(request):
 
 def greet(request, name):
     return HttpResponse(f"Hello, {name.capitalize()}")
+
+def showpage(request):
+    return render(request, "myfirstapp/index.html")
